@@ -42,7 +42,14 @@ app.get('/about', (req, res) => {
 
 app.get('/sample', (req, res) => {
     res.render(__dirname + '/node-web-server/public/sample');
-})
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        sampleText: 'This is the projects page!'
+    });
+});
 
 app.get('/bad', (req, res) => {
     res.send({

@@ -1,18 +1,21 @@
 {
-  "name": "node-web-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.17.1",
-    "express": "^4.16.2",
-    "hbs": "^4.0.1"
-  }
+    "name": "node-web-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "push": "git push origin && git push heroku",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "devMode": "nodemon server.js -e js,hbs,css,html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.17.1",
+        "bootstrap": "^4.0.0-beta.2",
+        "express": "^4.16.2",
+        "hbs": "^4.0.1"
+    }
 }

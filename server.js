@@ -40,6 +40,10 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/sample', (req, res) => {
+    res.render(__dirname + '/node-web-server/public/sample');
+})
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: '404 - Page not found.'
